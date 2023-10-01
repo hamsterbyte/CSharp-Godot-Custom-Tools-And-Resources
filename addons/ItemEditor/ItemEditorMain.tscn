@@ -1,0 +1,103 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfk15jgvil7gr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e3ush"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Toolbar" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 5.0
+offset_right = -10.0
+offset_bottom = 52.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_e3ush")
+metadata/_edit_use_anchors_ = true
+
+[node name="Margins" type="MarginContainer" parent="Toolbar"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -23.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Layout" type="HBoxContainer" parent="Toolbar/Margins"]
+layout_mode = 2
+
+[node name="btn_Create" type="Button" parent="Toolbar/Margins/Layout"]
+layout_mode = 2
+text = "Create New"
+
+[node name="btn_Refresh" type="Button" parent="Toolbar/Margins/Layout"]
+layout_mode = 2
+text = "Refresh"
+
+[node name="hSpace" type="Label" parent="Toolbar/Margins/Layout"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="lbl_Filter" type="Label" parent="Toolbar/Margins/Layout"]
+layout_mode = 2
+text = "Filter
+"
+
+[node name="txt_Filter" type="LineEdit" parent="Toolbar/Margins/Layout"]
+custom_minimum_size = Vector2(480, 0)
+layout_mode = 2
+clear_button_enabled = true
+
+[node name="Item Container" type="Panel" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 62.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Margins" type="MarginContainer" parent="Item Container"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Item Container/Margins"]
+layout_mode = 2
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="Content" type="FlowContainer" parent="Item Container/Margins/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10

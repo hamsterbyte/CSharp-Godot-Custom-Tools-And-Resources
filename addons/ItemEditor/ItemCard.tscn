@@ -1,0 +1,171 @@
+[gd_scene load_steps=10 format=3 uid="uid://bmpaxutaoy4e1"]
+
+[ext_resource type="Texture2D" uid="uid://c76erdlpc0wo7" path="res://icon.svg" id="1_3ciqr"]
+[ext_resource type="Script" path="res://addons/ItemCard.cs" id="1_ykiu8"]
+[ext_resource type="Texture2D" uid="uid://crh1bx6dminp3" path="res://addons/open-folder.svg" id="3_mir51"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lxry0"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.121569, 0.121569, 0.121569, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_41134"]
+bg_color = Color(0.121094, 0.121094, 0.121094, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_lxnfu"]
+color = Color(0.184314, 0.184314, 0.184314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3sc47"]
+bg_color = Color(0.776471, 0.0784314, 0.184314, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p51pc"]
+bg_color = Color(0.980392, 0.219608, 0.286275, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gm4o7"]
+bg_color = Color(0.494118, 0.0313726, 0.101961, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="Item Card" type="Panel" node_paths=PackedStringArray("_deleteButton", "_statTypes", "_icon", "_iconDialog", "_name", "_description", "_amount", "_deleteDialog")]
+clip_contents = true
+custom_minimum_size = Vector2(320, 460)
+theme_override_styles/panel = SubResource("StyleBoxFlat_lxry0")
+script = ExtResource("1_ykiu8")
+_deleteButton = NodePath("btn_Delete")
+_statTypes = NodePath("Margins/Vertical Container/Stat/enum_Stat")
+_icon = NodePath("Margins/Vertical Container/btn_Icon")
+_iconDialog = NodePath("Margins/Vertical Container/btn_Icon/dlg_LoadIcon")
+_name = NodePath("Margins/Vertical Container/txt_Name")
+_description = NodePath("Margins/Vertical Container/txt_Description")
+_amount = NodePath("Margins/Vertical Container/Amount/spin_Amount")
+_deleteDialog = NodePath("btn_Delete/ConfirmationDialog")
+
+[node name="Margins" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 10
+
+[node name="Vertical Container" type="VBoxContainer" parent="Margins"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="btn_Icon" type="TextureButton" parent="Margins/Vertical Container"]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+texture_normal = ExtResource("1_3ciqr")
+texture_hover = ExtResource("3_mir51")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="dlg_LoadIcon" type="FileDialog" parent="Margins/Vertical Container/btn_Icon"]
+title = "Open a File"
+initial_position = 4
+size = Vector2i(640, 480)
+ok_button_text = "Open"
+cancel_button_text = "Clear Icon"
+file_mode = 0
+filters = PackedStringArray("*.png", "*.gif", "*.svg", "*.jpg", "*.bmp")
+
+[node name="txt_Name" type="LineEdit" parent="Margins/Vertical Container"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = SubResource("StyleBoxFlat_41134")
+placeholder_text = "Enter Name..."
+alignment = 1
+flat = true
+
+[node name="HSeparator" type="HSeparator" parent="Margins/Vertical Container"]
+layout_mode = 2
+theme_override_constants/separation = 20
+theme_override_styles/separator = SubResource("StyleBoxLine_lxnfu")
+
+[node name="Stat" type="HBoxContainer" parent="Margins/Vertical Container"]
+layout_mode = 2
+
+[node name="lbl_Stat" type="Label" parent="Margins/Vertical Container/Stat"]
+layout_mode = 2
+text = "Stat          "
+
+[node name="enum_Stat" type="OptionButton" parent="Margins/Vertical Container/Stat"]
+layout_mode = 2
+size_flags_horizontal = 3
+item_count = 3
+selected = 0
+popup/item_0/text = "Health"
+popup/item_0/id = 0
+popup/item_1/text = "Mana"
+popup/item_1/id = 1
+popup/item_2/text = "Armor"
+popup/item_2/id = 2
+
+[node name="Amount" type="HBoxContainer" parent="Margins/Vertical Container"]
+layout_mode = 2
+
+[node name="lbl_Amount" type="Label" parent="Margins/Vertical Container/Amount"]
+layout_mode = 2
+text = "Amount  "
+
+[node name="spin_Amount" type="SpinBox" parent="Margins/Vertical Container/Amount"]
+layout_mode = 2
+size_flags_horizontal = 3
+rounded = true
+allow_greater = true
+allow_lesser = true
+update_on_text_changed = true
+
+[node name="txt_Description" type="TextEdit" parent="Margins/Vertical Container"]
+custom_minimum_size = Vector2(256, 128)
+layout_mode = 2
+placeholder_text = "Description..."
+wrap_mode = 1
+
+[node name="btn_Delete" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -47.0
+offset_top = 10.0
+offset_right = -11.0
+offset_bottom = 46.0
+grow_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_3sc47")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p51pc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gm4o7")
+text = "X"
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="btn_Delete"]
+title = "Are You Sure?"
+initial_position = 4
+size = Vector2i(480, 128)
+unresizable = true
+popup_window = true
+ok_button_text = "Delete"
+dialog_text = "The item will be completely removed from the project. This action cannot be undone."
+dialog_autowrap = true

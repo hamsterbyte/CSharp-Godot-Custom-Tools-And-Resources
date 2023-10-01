@@ -1,0 +1,12 @@
+2a60927148abd1d33b818b535e306557
+::res://::1696142773
+icon.svg::CompressedTexture2D::5143303747015407318::1695861643::1696142719::1::::<><>::
+::res://addons/::1696142632
+::res://addons/ItemEditor/::1696142719
+ItemCard.tscn::PackedScene::3259694626758171382::1696141935::0::1::::<><>::uid://c76erdlpc0wo7<>res://addons/ItemCard.cs<>uid://crh1bx6dminp3
+ItemEditorMain.tscn::PackedScene::5146062061690318677::1696135477::0::1::::<><>::
+open-folder.svg::CompressedTexture2D::6268971854392806495::1696111882::1696142719::1::::<><>::
+::res://Icons/::1696142719
+armor-vest.svg::CompressedTexture2D::3861142727169416207::1696115480::1696142719::1::::<><>::
+health-potion.svg::CompressedTexture2D::6466332001788971929::1696115420::1696142719::1::::<><>::
+magic-potion.svg::CompressedTexture2D::3578845659345256060::1696115546::1696142719::1::::<><>::
