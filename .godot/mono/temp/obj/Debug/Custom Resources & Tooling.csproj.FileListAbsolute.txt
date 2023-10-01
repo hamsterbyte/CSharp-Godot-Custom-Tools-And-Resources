@@ -1,0 +1,17 @@
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\bin\Debug\Custom Resources & Tooling.deps.json
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\bin\Debug\Custom Resources & Tooling.runtimeconfig.json
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\bin\Debug\Custom Resources & Tooling.dll
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\bin\Debug\Custom Resources & Tooling.pdb
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\Custom Resources & Tooling.csproj.AssemblyReference.cache
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\Custom Resources & Tooling.GeneratedMSBuildEditorConfig.editorconfig
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\Custom Resources & Tooling.AssemblyInfoInputs.cache
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\Custom Resources & Tooling.AssemblyInfo.cs
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\Custom Resources & Tooling.csproj.CoreCompileInputs.cache
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\Custom Resources & Tooling.csproj.CopyComplete
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\Custom Resources & Tooling.dll
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\refint\Custom Resources & Tooling.dll
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\Custom Resources & Tooling.pdb
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\Custom Resources & Tooling.genruntimeconfig.cache
+D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\.godot\mono\temp\obj\Debug\ref\Custom Resources & Tooling.dll
