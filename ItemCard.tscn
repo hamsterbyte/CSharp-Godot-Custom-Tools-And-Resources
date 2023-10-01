@@ -1,8 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bmpaxutaoy4e1"]
+[gd_scene load_steps=9 format=3 uid="uid://bmpaxutaoy4e1"]
 
-[ext_resource type="Texture2D" uid="uid://c76erdlpc0wo7" path="res://icon.svg" id="1_3ciqr"]
-[ext_resource type="Script" path="res://addons/ItemCard.cs" id="1_ykiu8"]
-[ext_resource type="Texture2D" uid="uid://crh1bx6dminp3" path="res://addons/open-folder.svg" id="3_mir51"]
+[ext_resource type="Texture2D" uid="uid://cfjppxhwbvili" path="res://icon.svg" id="1_3ciqr"]
+[ext_resource type="Texture2D" uid="uid://cvk0byof4q5lb" path="res://open-folder.svg" id="2_wn6mw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lxry0"]
 content_margin_left = 10.0
@@ -44,19 +43,10 @@ corner_radius_top_right = 50
 corner_radius_bottom_right = 50
 corner_radius_bottom_left = 50
 
-[node name="Item Card" type="Panel" node_paths=PackedStringArray("_deleteButton", "_statTypes", "_icon", "_iconDialog", "_name", "_description", "_amount", "_deleteDialog")]
+[node name="Item Card" type="Panel"]
 clip_contents = true
 custom_minimum_size = Vector2(320, 460)
 theme_override_styles/panel = SubResource("StyleBoxFlat_lxry0")
-script = ExtResource("1_ykiu8")
-_deleteButton = NodePath("btn_Delete")
-_statTypes = NodePath("Margins/Vertical Container/Stat/enum_Stat")
-_icon = NodePath("Margins/Vertical Container/btn_Icon")
-_iconDialog = NodePath("Margins/Vertical Container/btn_Icon/dlg_LoadIcon")
-_name = NodePath("Margins/Vertical Container/txt_Name")
-_description = NodePath("Margins/Vertical Container/txt_Description")
-_amount = NodePath("Margins/Vertical Container/Amount/spin_Amount")
-_deleteDialog = NodePath("btn_Delete/ConfirmationDialog")
 
 [node name="Margins" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -78,13 +68,13 @@ size_flags_vertical = 4
 custom_minimum_size = Vector2(0, 128)
 layout_mode = 2
 texture_normal = ExtResource("1_3ciqr")
-texture_hover = ExtResource("3_mir51")
+texture_hover = ExtResource("2_wn6mw")
 ignore_texture_size = true
 stretch_mode = 5
 
 [node name="dlg_LoadIcon" type="FileDialog" parent="Margins/Vertical Container/btn_Icon"]
-title = "Open a File"
 initial_position = 4
+title = "Open a File"
 size = Vector2i(640, 480)
 ok_button_text = "Open"
 cancel_button_text = "Clear Icon"
@@ -161,8 +151,8 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_gm4o7")
 text = "X"
 
 [node name="ConfirmationDialog" type="ConfirmationDialog" parent="btn_Delete"]
-title = "Are You Sure?"
 initial_position = 4
+title = "Are You Sure?"
 size = Vector2i(480, 128)
 unresizable = true
 popup_window = true
