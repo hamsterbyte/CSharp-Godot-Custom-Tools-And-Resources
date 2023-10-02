@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PickupItem" load_steps=2 format=3 uid="uid://euoe1asxx414"]
+
+[ext_resource type="Script" path="res://addons/ItemEditor/PickupItem.cs" id="1_ujxoj"]
+
+[resource]
+script = ExtResource("1_ujxoj")
+name = "Health Pickup2"
+statType = 0
+description = ""
+amount = 0

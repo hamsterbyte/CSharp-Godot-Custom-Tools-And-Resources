@@ -1,10 +1,18 @@
-2a60927148abd1d33b818b535e306557
-::res://::1696198045
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1696224170
 icon.svg::CompressedTexture2D::5143303747015407318::1695861643::1696142719::1::::<><>::
-ItemCard.tscn::PackedScene::3259694626758171382::1696195102::0::1::::<><>::uid://cfjppxhwbvili<>uid://cvk0byof4q5lb
-ItemEditorMain.tscn::PackedScene::5146062061690318677::1696195102::0::1::::<><>::
-open-folder.svg::CompressedTexture2D::6268971854392806495::1696144018::1696144018::1::::<><>::
+::res://addons/::1696203764
+::res://addons/ItemEditor/::1696224152
+ItemCard.cs::CSharpScript::-1::1696224152::0::1::::<><>::
+ItemCard.tscn::PackedScene::3259694626758171382::1696223892::0::1::::<><>::uid://cfjppxhwbvili
+ItemEditor.cs::CSharpScript::-1::1696222368::0::1::::<><>::
+ItemEditorMain.tscn::PackedScene::5146062061690318677::1696222709::0::1::::<><>::
+open-folder.svg::CompressedTexture2D::6268971854392806495::1696144018::1696203805::1::::<><>::
+PickupItem.cs::CSharpScript::-1::1696203719::0::1::::PickupItem<>Resource<>::
+plugin.cfg::TextFile::-1::1696203764::0::1::::<><>::
 ::res://Icons/::1696142719
 armor-vest.svg::CompressedTexture2D::3861142727169416207::1696115480::1696142719::1::::<><>::
 health-potion.svg::CompressedTexture2D::6466332001788971929::1696115420::1696142719::1::::<><>::
 magic-potion.svg::CompressedTexture2D::3578845659345256060::1696115546::1696142719::1::::<><>::
+::res://Pickup Items/::1696224328
+Health Pickup.tres::Resource/PickupItem::4316714732552016756::1696224328::0::1::::<><>::res://addons/ItemEditor/PickupItem.cs

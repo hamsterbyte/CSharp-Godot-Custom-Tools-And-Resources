@@ -1,5 +1,7 @@
 is_global = true
+build_property.GodotDisabledSourceGenerators = 
 build_property.GodotProjectDir = D:\Godot Tutorials\CSharp-Godot-Custom-Tools-And-Resources\
+build_property.GodotProjectDirBase64 = 
 build_property.GodotSourceGenerators = 
 build_property.IsGodotToolsProject = 
 build_property.TargetFramework = net6.0

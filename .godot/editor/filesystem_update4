@@ -1,2 +1,4 @@
-res://ItemCard.tscn
-res://ItemEditorMain.tscn
+res://addons/ItemEditor/ItemCard.cs
+res://addons/ItemEditor/ItemEditor.cs
+res://addons/ItemEditor/PickupItem.cs
+res://Pickup Items/Mana Pickup.tres

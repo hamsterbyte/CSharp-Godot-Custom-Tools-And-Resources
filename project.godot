@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="Custom Resources & Tooling"
-config/features=PackedStringArray("4.0", "C#", "Forward Plus")
-config/icon="res://icon.svg"
 config/tags=PackedStringArray("tutorials")
+config/features=PackedStringArray("4.1", "C#", "Forward Plus")
+config/icon="res://icon.svg"
 
 [dotnet]
 
@@ -21,4 +21,4 @@ project/assembly_name="Custom Resources & Tooling"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/ItemEditor/plugin.cfg")
